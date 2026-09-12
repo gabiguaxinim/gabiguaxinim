@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance | gabiguaxinim</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">gabiguaxinim</a></div>
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre-mim.html">Sobre Mim</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="performance.html" class="active">Performance</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container performance-page">
+        <section class="performance-header">
+            <h2>Performance</h2>
+            <p>
+                Suba ao palco e faça suas escolhas. Performance é uma webcomic interativa onde você decide o rumo da história.
+            </p>
+        </section>
+
+        <section class="comic-reader" aria-label="Leitor interativo da webcomic Performance">
+            <div class="comic-display">
+                <img id="comic-page" src="https://via.placeholder.com/800x500/1a1a2e/ffffff?text=Cena+1:+O+In%C3%ADcio" alt="Cena atual da webcomic Performance">
+            </div>
+
+            <div class="comic-choices">
+                <h3>O que você deseja fazer?</h3>
+                <div class="choice-buttons">
+                    <button type="button" class="btn-choice" onclick="mudarCena('https://via.placeholder.com/800x500/221f3b/ffffff?text=Caminho+A:+Entrar+no+Palco')">
+                        Opção A: Entrar no palco
+                    </button>
+                    <button type="button" class="btn-choice" onclick="mudarCena('https://via.placeholder.com/800x500/3b1f2b/ffffff?text=Caminho+B:+Ficar+nos+Bastidores')">
+                        Opção B: Esperar nos bastidores
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 gabiguaxinim — www.gabiguaxinim.com.br. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function mudarCena(novaImagem) {
+            document.getElementById('comic-page').src = novaImagem;
+        }
+    </script>
+</body>
+</html>
